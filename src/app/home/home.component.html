@@ -1,0 +1,40 @@
+<!-- <table>
+    <thead>
+        <tr>
+            <th>Book Id</th>
+            <th>Book Name</th>
+            <th>Book Price</th>
+            <th>Book Author</th>
+            <th>Book Image</th>
+            <th>Book Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let b of books">
+            <td>{{b.bookId}}</td>
+            <td>{{b.bookName}}</td>
+            <td>{{b.bookPrice}}</td>
+            <td>{{b.bookAuthor}}</td>
+            <td><img [src]="b.bookImage" alt="{{b.bookName}}" width="80" height="80"></td>
+            <td>{{b.bookDescription}}</td>
+        </tr>
+    </tbody>
+</table>
+ -->
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let b of books">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="card-title"><b>Book Name:</b>{{b.bookName}}</p>
+                    <img [src]="b.bookImage" alt="{{b.bookName}}" class="img-fluid mb-2" style="width: 100%; height: auto;">
+                    <h5 class="card-text"><b>RS.</b>{{b.bookPrice}}</h5>
+                    <p class="card-text"><b>Description:</b>{{b.bookDescription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
